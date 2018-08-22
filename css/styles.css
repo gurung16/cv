@@ -1,0 +1,212 @@
+/* Color Palette
+#2B2D42 - dark blue
+#8D99AE - light blue
+#EDF2F4 - blue/white
+#EF233C - red
+*/
+/* -----------global area-----------------*/
+
+HTML{
+  box-sizing: border-box;
+}
+*, *,*:before, *:after{
+  box-sizing: inherit;
+}
+
+body{
+  margin: 0;
+
+
+}
+h1, h2, h3{
+  font-family: 'Sedgwick Ave', cursive;
+
+
+}
+h2, h3{
+
+  text-decoration: underline;
+
+}
+
+h3{
+  margin: 0;
+}
+
+p, li{
+  font-family: 'Architects Daughter', cursive;
+}
+
+.content-wraper{
+  margin: 0 auto;
+  max-width:950px;
+  padding:35px;
+  overflow: auto;
+}
+
+
+/*-------skills-------*/
+
+.skills{
+  background:linear-gradient(rgba(141, 153, 174, 0.8),rgba(141, 153, 174, 0.5)),
+             url(https://images.unsplash.com/photo-1472437774355-71ab6752b434?dpr=1&auto=compress,format&fit=crop&w=667&h=&q=80&cs=tinysrgb&crop=) no-repeat fixed;
+  background-size: cover;
+
+}
+
+.btn{
+  padding: 10px;
+  background-color:#EF233C;
+  display: inline-block;
+  text-decoration: none;
+  color:white;
+}
+/*------ header & footer -------*/
+header, footer{
+  background-color: #2B2D42;
+  color:#EDF2F4;
+  text-align: center;
+
+}
+header h1, footer h2{
+  color: #EDF2F4;
+  font-size: 40px
+}
+
+header{
+  padding-top:50px;
+  position: relative;
+}
+
+.profile-img{
+  border-radius: 50%;
+}
+.download{
+  position: absolute;
+  bottom:0;
+  right:0;
+}
+p{
+  font-size: 20px;
+}
+
+
+
+
+/*-------footer--------*/
+
+contact-info{
+  margin:0 auto;
+  display: inline-block;
+}
+
+.contact-info a{
+  text-decoration: none;
+  padding:10px;
+  display: inline-block;
+  color:white;
+}
+.contact-info a:hover {
+  color: blue;
+}
+
+.contact-info a:visited {
+  color: purple;
+}
+
+/*Navigation*/
+
+nav{
+text-align: center;
+background: white;
+position: fixed;
+width:100%;
+top:0;
+
+}
+
+nav a{
+  display: inline-block;
+  color: #EF233C;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 15px 20px;
+
+
+}
+
+/*--------education-------*/
+.education{
+  background-color: #8D99AE;
+
+}
+
+.underline{
+  text-decoration: underline;
+}
+
+h3 ~ p {
+  margin: 0;
+}
+
+.edu-description{
+  margin-bottom:25px;
+}
+
+.edu-description p:first-of-type{
+  margin-top: 0px;
+}
+
+
+/*------work-------*/
+.work{
+  background-color: #EDF2F4;
+}
+
+
+/*-----hobbies-------*/
+.hobbies{
+  background-color:  #8D99AE;
+}
+
+/* main globe */
+
+
+.main_globe{
+  padding: 20px;
+  text-align: center;
+}
+
+.main_globe a{
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  font-family: 'Lora', serif;
+
+}
+
+
+/*media quries*/
+@media (min-width:900px) {
+
+  .col-narrow{
+    width: 30%;
+    float: left;
+    /*margin-right: 10px;*/
+  }
+
+  .col-wide{
+    width:70%;
+    float: left;
+    padding-left: 20px;
+  }
+}
+
+@media (max-width:899px) {
+  header{
+    text-align: center;
+  }
+  .profile-img{
+    width:150px;
+  }
+}
